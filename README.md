@@ -10,6 +10,11 @@ this project generate a list of domain which can be used to filter out porn urls
 3. Copy the file in your project
 4. Use it!!
 ```
+```php
+$url = 'https://pornhub.com/huyftjdh-35476254';
+$parsed = parse_url($url);
+$match = in_array($parsed['host'], $blocked_domains);
+```
 
 # This project may not be sufficient for your need
 
